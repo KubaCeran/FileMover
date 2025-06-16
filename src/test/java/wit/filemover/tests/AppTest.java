@@ -1,4 +1,4 @@
-package wit.tc1;
+package wit.filemover.tests;
 
 /**
  * Unit test for simple App.
