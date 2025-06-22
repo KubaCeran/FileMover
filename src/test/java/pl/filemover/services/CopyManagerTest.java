@@ -56,4 +56,31 @@ public class CopyManagerTest {
             assertEquals(1, stats.getSkipped());
         }
     }
+    
+    @Test
+    public void testInvalidPatternThrowsException() throws Exception {
+        try (CopyManager manager = new CopyManager(2)) {
+            Exception exception = assertThrows(Exception.class, () ->
+                manager.copyDirectory(tempSrc.toFile(), tempDest.toFile(), "[a-z")
+            );
+            assertTrue(exception.getMessage().contains("Unclosed character class"));
+        }
+    }
+    
+    @Test
+    public void testEmptySourceDirectory() throws Exception {
+        // Usuwamy wszystkie pliki z tempSrc, by był pusty
+        Files.walk(tempSrc)
+            .filter(path -> !path.equals(tempSrc))
+            .map(Path::toFile)
+            .forEach(File::delete);
+
+        try (CopyManager manager = new CopyManager(2)) {
+            CopyStats stats = manager.copyDirectory(tempSrc.toFile(), tempDest.toFile(), "*.*");
+            assertEquals(1, stats.getCopied());  
+            assertEquals(1, stats.getSkipped());
+        }
+    }
+
+
 }
