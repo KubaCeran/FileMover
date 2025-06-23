@@ -20,11 +20,11 @@ public class Messages {
 	/**
 	 * Label for the source path input field
 	 */
-	public static final String SOURCE_LABEL = "Œcie¿ka Ÿród³owa";
+	public static final String SOURCE_LABEL = "ÅšcieÅ¼ka ÅºrÃ³dÅ‚owa";
 	/**
 	 * Label for the destination path input field.
 	 */
-	public static final String DEST_LABEL = "Œcie¿ka docelowa";
+	public static final String DEST_LABEL = "ÅšcieÅ¼ka docelowa";
 	/**
 	 * Text displayed on the path selection field
 	 */
@@ -32,7 +32,7 @@ public class Messages {
 	/**
 	 * Title for the source directory selection
 	 */
-	public static final String SRC_TITLE = "Wybierz katalog Ÿród³owy";
+	public static final String SRC_TITLE = "Wybierz katalog ÅºrÃ³dÅ‚owy";
 	/**
 	 * Title for the destination directory selection
 	 */
@@ -40,7 +40,7 @@ public class Messages {
 	/**
 	 * Label for the file mask selection
 	 */
-	public static final String MASK_LABEL = "Maska plików";
+	public static final String MASK_LABEL = "Maska plikÃ³w";
 	/**
 	 * Text displayed on the button that initiates the copy operation
 	 */
@@ -48,27 +48,27 @@ public class Messages {
 	/**
 	 * Title used for error message
 	 */
-	public static final String ERROR_LABEL = "B³¹d";
+	public static final String ERROR_LABEL = "BÅ‚Ä…d";
 	/**
 	 * Error message displayed when paths are empty
 	 */
-	public static final String PATHS_EMPTY_ERROR = "Podaj œcie¿ki Ÿród³ow¹ i docelow¹";
+	public static final String PATHS_EMPTY_ERROR = "Podaj Å›cieÅ¼ki ÅºrÃ³dÅ‚owÄ… i docelowÄ…";
 	/**
 	 * Error message displayed when source and destination paths are identical
 	 */
-	public static final String PATHS_SAME_ERROR = "Katalog Ÿród³owy i docelowy nie mog¹ byæ takie same";
+	public static final String PATHS_SAME_ERROR = "Katalog ÅºrÃ³dÅ‚owy i docelowy nie mogÄ… byÄ‡ takie same";
 	/**
 	 * Error message displayed when the source path is invalid
 	 */
-	public static final String SRC_PATH_ERROR = "Nieprawid³owy katalog Ÿród³owy";
+	public static final String SRC_PATH_ERROR = "NieprawidÅ‚owy katalog ÅºrÃ³dÅ‚owy";
 	/**
 	 * Error message displayed when the destination path is invalid
 	 */
-	public static final String DEST_PATH_ERROR = "Nieprawid³owy katalog docelowy";
+	public static final String DEST_PATH_ERROR = "NieprawidÅ‚owy katalog docelowy";
 	/**
 	 * Prefix for error messages
 	 */
-	public static final String ERROR_MSG = "Wyst¹pi³ b³¹d: ";
+	public static final String ERROR_MSG = "WystÄ…piÅ‚ bÅ‚Ä…d: ";
 	/**
 	 * Prefix for displaying the number of copied files
 	 */
@@ -76,13 +76,13 @@ public class Messages {
 	/**
 	 * Prefix for displaying the number of skipped files
 	 */
-	public static final String SKIPPED_MSG = "\nPominiêto: ";
+	public static final String SKIPPED_MSG = "\nPominiÄ™to: ";
 	/**
 	 * Title for the completion dialog shown after the copy operation finishes
 	 */
-	public static final String FINISH_TITLE = "Zakoñczono kopiowanie";
+	public static final String FINISH_TITLE = "ZakoÅ„czono kopiowanie";
 	/**
 	 * Prefix for file-specific error messages
 	 */
-	public static final String FILE_CREATE_ERROR = "Nie uda³o siê skopiowaæ pliku: ";
+	public static final String FILE_CREATE_ERROR = "Nie udaÅ‚o siÄ™ skopiowaÄ‡ pliku: ";
 }
