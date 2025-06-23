@@ -69,7 +69,6 @@ public class CopyManagerTest {
     
     @Test
     public void testEmptySourceDirectory() throws Exception {
-        // Usuwamy wszystkie pliki z tempSrc, by był pusty
         Files.walk(tempSrc)
             .filter(path -> !path.equals(tempSrc))
             .map(Path::toFile)

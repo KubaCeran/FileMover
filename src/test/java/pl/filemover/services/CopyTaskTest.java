@@ -54,7 +54,7 @@ public class CopyTaskTest {
         CopyTask task = new CopyTask(source.toFile(), dest.toFile());
         boolean result = task.call();
 
-        assertFalse(result);  // areFilesEqual zwróci true → kopiowanie pominięte
+        assertFalse(result); 
     }
 
     @Test
