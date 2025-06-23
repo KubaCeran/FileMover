@@ -1,3 +1,7 @@
+/**
+ * Listens for copy action events triggered by the copy button in the FileSelectorWindow.
+ * Validates paths and initiates the file copying process
+ */
 package pl.filemover.ui.listeners;
 
 import java.awt.event.ActionEvent;
@@ -11,13 +15,35 @@ import pl.filemover.services.CopyThread;
 import pl.filemover.ui.FileSelectorWindow;
 import pl.filemover.utils.Messages;
 
+/**
+ * 
+ * @author Jakub Ceranowicz
+ * @author Maksymilian Grzelecki
+ * @author Mateusz Przybysz
+ * @version 23.06.2025
+ * Implementation of ActionListener that handles the file copying operation.
+ * Coordinates between the UI components and the background copy process.
+ */
 public class CopyActionListener implements ActionListener{
+	/**
+	 * Reference to the parent FileSelectorWindow that contains the copy button
+	 */
 	private final FileSelectorWindow parent;
 
+	/**
+	 * Constructs a new CopyActionListener instance bound to the specified parent window
+	 * @param parent FileSelectorWindow that contains the copy button
+	 */
     public CopyActionListener(FileSelectorWindow parent) {
         this.parent = parent;
     }
     
+    /**
+     * Handles the copy action event triggered by the copy button.
+     * Performs validation checks and initiates the file copying process
+     * 
+     * @param e the ActionEvent object
+     */
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		JButton copyButton = parent.getCopyButton();

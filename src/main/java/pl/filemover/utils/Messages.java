@@ -1,22 +1,88 @@
+/**
+ * Configuration classes containing static constants for file operation parameters.
+ * These values control the performance characteristics of file operations.
+ */
 package pl.filemover.utils;
 
+/**
+ * 
+ * @author Jakub Ceranowicz
+ * @author Maksymilian Grzelecki
+ * @author Mateusz Przybysz
+ * @version 23.06.2025
+ * Utility class providing all translatable messages and UI text for the application
+ */
 public class Messages {
+	/**
+	 * The title displayed in the application window
+	 */
 	public static final String APP_TITLE = "File Mover";
-	public static final String SOURCE_LABEL = "ÅšcieÅ¼ka ÅºrÃ³dÅ‚owa";
-	public static final String DEST_LABEL = "ÅšcieÅ¼ka docelowa";
+	/**
+	 * Label for the source path input field
+	 */
+	public static final String SOURCE_LABEL = "Œcie¿ka Ÿród³owa";
+	/**
+	 * Label for the destination path input field.
+	 */
+	public static final String DEST_LABEL = "Œcie¿ka docelowa";
+	/**
+	 * Text displayed on the path selection field
+	 */
 	public static final String BUTTON_SELECT = "Wybierz";
-	public static final String SRC_TITLE = "Wybierz katalog ÅºrÃ³dÅ‚owy";
+	/**
+	 * Title for the source directory selection
+	 */
+	public static final String SRC_TITLE = "Wybierz katalog Ÿród³owy";
+	/**
+	 * Title for the destination directory selection
+	 */
 	public static final String DEST_TITLE = "Wybierz katalog docelowy";
-	public static final String MASK_LABEL = "Maska plikÃ³w";
+	/**
+	 * Label for the file mask selection
+	 */
+	public static final String MASK_LABEL = "Maska plików";
+	/**
+	 * Text displayed on the button that initiates the copy operation
+	 */
 	public static final String COPY_BUTTON = "Rozpocznij proces kopiowania";
-	public static final String ERROR_LABEL = "BÅ‚Ä…d";
-	public static final String PATHS_EMPTY_ERROR = "Podaj Å›cieÅ¼ki ÅºrÃ³dÅ‚owÄ… i docelowÄ…";
-	public static final String PATHS_SAME_ERROR = "Katalog ÅºrÃ³dÅ‚owy i docelowy nie mogÄ… byÄ‡ takie same";
-	public static final String SRC_PATH_ERROR = "NieprawidÅ‚owy katalog ÅºrÃ³dÅ‚owy";
-	public static final String DEST_PATH_ERROR = "NieprawidÅ‚owy katalog docelowy";
-	public static final String ERROR_MSG = "WystÄ…piÅ‚ bÅ‚Ä…d: ";
+	/**
+	 * Title used for error message
+	 */
+	public static final String ERROR_LABEL = "B³¹d";
+	/**
+	 * Error message displayed when paths are empty
+	 */
+	public static final String PATHS_EMPTY_ERROR = "Podaj œcie¿ki Ÿród³ow¹ i docelow¹";
+	/**
+	 * Error message displayed when source and destination paths are identical
+	 */
+	public static final String PATHS_SAME_ERROR = "Katalog Ÿród³owy i docelowy nie mog¹ byæ takie same";
+	/**
+	 * Error message displayed when the source path is invalid
+	 */
+	public static final String SRC_PATH_ERROR = "Nieprawid³owy katalog Ÿród³owy";
+	/**
+	 * Error message displayed when the destination path is invalid
+	 */
+	public static final String DEST_PATH_ERROR = "Nieprawid³owy katalog docelowy";
+	/**
+	 * Prefix for error messages
+	 */
+	public static final String ERROR_MSG = "Wyst¹pi³ b³¹d: ";
+	/**
+	 * Prefix for displaying the number of copied files
+	 */
 	public static final String COPIED_MSG = "Skopiowano: ";
-	public static final String SKIPPED_MSG = "\nPominiÄ™to: ";
-	public static final String FINISH_TITLE = "ZakoÅ„czono kopiowanie";
-	public static final String FILE_CREATE_ERROR = "Nie udaÅ‚o siÄ™ skopiowaÄ‡ pliku: ";
+	/**
+	 * Prefix for displaying the number of skipped files
+	 */
+	public static final String SKIPPED_MSG = "\nPominiêto: ";
+	/**
+	 * Title for the completion dialog shown after the copy operation finishes
+	 */
+	public static final String FINISH_TITLE = "Zakoñczono kopiowanie";
+	/**
+	 * Prefix for file-specific error messages
+	 */
+	public static final String FILE_CREATE_ERROR = "Nie uda³o siê skopiowaæ pliku: ";
 }
